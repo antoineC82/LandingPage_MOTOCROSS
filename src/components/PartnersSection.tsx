@@ -9,22 +9,22 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const partners = [
   {
     name: "3ASRACING",
-    logo: "../../public/images/3AS.jpg",
+    logo: "../../LandingPage_MOTOCROSS/public/images/3AS.jpg",
     description: "Revendeurs d'équipements & pièces détachées"
   },
   {
     name: "FXMOTORS",
-    logo: "../../public/images/FX.png",
+    logo: "../../LandingPage_MOTOCROSS/public/images/FX.png",
     description: "Revendeurs d'équipements & pièces détachées"
   },
   {
     name: "MXSEAT",
-    logo: "../../public/images/MXSEAT.jpg",
+    logo: "../../LandingPage_MOTOCROSS/public/images/MXSEAT.jpg",
     description: "Housse de selles personnalisés"
   },
   {
     name: "FoxRacing",
-    logo: "../../public/images/FOX.jpg",
+    logo: "../../LandingPage_MOTOCROSS/public/images/FOX.jpg",
     description: "Fournisseur exclusif d'équipements"
   }
 ];

@@ -6,42 +6,42 @@ const riders: Rider[] = [
   {
     name: "Florentin Delpouch",
     role: "250 KXF 2023",
-    image: "../../public/images/FD.jpg",
+    image: "../../LandingPage_MOTOCROSS/public/images/FD.jpg",
     achievements: "Sur les roues depuis 8 ans",
     number: 973
   },
   {
     name: "Fabien Fabris",
     role: "450 CRF 2024",
-    image: "../../public/images/FF.jpg",
+    image: "../../LandingPage_MOTOCROSS/public/images/FF.jpg",
     achievements: "Sur les roues depuis 8 ans",
     number: 731
   },
   {
     name: "Romain Decon",
     role: "250 FC 2021",
-    image: "../../public/images/RD.jpg",
+    image: "../../LandingPage_MOTOCROSS/public/images/RD.jpg",
     achievements: "Sur les roues depuis 8 ans",
     number: 815
   },
   {
     name: "Antoine Culot",
     role: "250 SXF 2024",
-    image: "../../public/images/AC.jpg",
+    image: "../../LandingPage_MOTOCROSS/public/images/AC.jpg",
     achievements: "Sur les roues depuis 8 ans",
     number: 207
   },
   {
     name: "Ludovic Génot",
     role: "250 CRF 2024",
-    image: "../../public/images/LG.jpeg",
+    image: "../../LandingPage_MOTOCROSS/public/images/LG.jpeg",
     achievements: "Sur les roues depuis 8 ans",
     number: 661
   },
   {
     name: "Romain Fau",
     role: "250 FC 2021",
-    image: "../../public/images/RF.jpg",
+    image: "../../LandingPage_MOTOCROSS/public/public/images/RF.jpg",
     achievements: "Sur les roues depuis 8 ans",
     number: 710
   }

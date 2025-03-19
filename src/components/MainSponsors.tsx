@@ -4,7 +4,7 @@ import { Award, Zap } from 'lucide-react';
 const mainSponsors = [
   {
     name: "RedBull Racing",
-    logo: "../../public/images/redbull.png",
+    logo: "../../LandingPage_MOTOCROSS/public/images/redbull.png",
     description: "Partenaire Officiel des Boissons Énergétiques",
     details: "Alimentant notre équipe avec des boissons énergétiques et un soutien promotionnel depuis 2020. Ensemble, nous avons décroché de nombreuses victoires et créé des moments inoubliables dans l'histoire du motocross.",
     achievements: ["Soutien Marketing Global", "Amélioration des Performances", "Sponsoring d'Événements"],
