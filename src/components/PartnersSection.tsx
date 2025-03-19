@@ -5,26 +5,30 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import as from '../../LandingPage_MOTOCROSS/public/images/3AS.jpg';
+import fx from '../../LandingPage_MOTOCROSS/public/images/FX.png';
+import mx from '../../LandingPage_MOTOCROSS/public/images/MXSEAT.jpg';
+import fox from '../../LandingPage_MOTOCROSS/public/images/FOX.jpg';
 
 const partners = [
   {
     name: "3ASRACING",
-    logo: "../../LandingPage_MOTOCROSS/public/images/3AS.jpg",
+    logo: as,
     description: "Revendeurs d'équipements & pièces détachées"
   },
   {
     name: "FXMOTORS",
-    logo: "../../LandingPage_MOTOCROSS/public/images/FX.png",
+    logo: fx,
     description: "Revendeurs d'équipements & pièces détachées"
   },
   {
     name: "MXSEAT",
-    logo: "../../LandingPage_MOTOCROSS/public/images/MXSEAT.jpg",
+    logo: mx,
     description: "Housse de selles personnalisés"
   },
   {
     name: "FoxRacing",
-    logo: "../../LandingPage_MOTOCROSS/public/images/FOX.jpg",
+    logo: fox,
     description: "Fournisseur exclusif d'équipements"
   }
 ];

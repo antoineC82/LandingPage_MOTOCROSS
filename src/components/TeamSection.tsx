@@ -1,47 +1,53 @@
 import React from 'react';
 import { type Rider } from '../types';
 import { Trophy, ChevronRight } from 'lucide-react';
+import flo from '../../LandingPage_MOTOCROSS/public/images/FD.jpg';
+import fab from '../../LandingPage_MOTOCROSS/public/images/FF.jpg';
+import rom from '../../LandingPage_MOTOCROSS/public/images/RD.jpg';
+import ant from '../../LandingPage_MOTOCROSS/public/images/AC.jpg';
+import lud from '../../LandingPage_MOTOCROSS/public/images/LG.jpeg';
+import romf from '../../LandingPage_MOTOCROSS/public/images/RF.jpg';
 
 const riders: Rider[] = [
   {
     name: "Florentin Delpouch",
     role: "250 KXF 2023",
-    image: "../../LandingPage_MOTOCROSS/public/images/FD.jpg",
+    image: flo,
     achievements: "Sur les roues depuis 8 ans",
     number: 973
   },
   {
     name: "Fabien Fabris",
     role: "450 CRF 2024",
-    image: "../../LandingPage_MOTOCROSS/public/images/FF.jpg",
+    image: fab,
     achievements: "Sur les roues depuis 8 ans",
     number: 731
   },
   {
     name: "Romain Decon",
     role: "250 FC 2021",
-    image: "../../LandingPage_MOTOCROSS/public/images/RD.jpg",
+    image: rom,
     achievements: "Sur les roues depuis 8 ans",
     number: 815
   },
   {
     name: "Antoine Culot",
     role: "250 SXF 2024",
-    image: "../../LandingPage_MOTOCROSS/public/images/AC.jpg",
+    image: ant,
     achievements: "Sur les roues depuis 8 ans",
     number: 207
   },
   {
     name: "Ludovic Génot",
     role: "250 CRF 2024",
-    image: "../../LandingPage_MOTOCROSS/public/images/LG.jpeg",
+    image: lud,
     achievements: "Sur les roues depuis 8 ans",
     number: 661
   },
   {
     name: "Romain Fau",
     role: "250 FC 2021",
-    image: "../../LandingPage_MOTOCROSS/public/public/images/RF.jpg",
+    image: romf,
     achievements: "Sur les roues depuis 8 ans",
     number: 710
   }

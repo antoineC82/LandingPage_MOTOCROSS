@@ -1,4 +1,5 @@
 import React from 'react';
+import fond from '../../LandingPage_MOTOCROSS/public/images/fond.jpg';
 
 export function Hero() {
   return (
@@ -6,7 +7,7 @@ export function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: 'url("../../LandingPage_MOTOCROSS/public/images/fond.jpg")',
+          backgroundImage: `url(${fond})`,
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
