@@ -4,7 +4,7 @@ import { Award, Zap } from 'lucide-react';
 const mainSponsors = [
   {
     name: "RedBull Racing",
-    logo: "../../images/redbull.png",
+    logo: "../../public/images/redbull.png",
     description: "Partenaire Officiel des Boissons Énergétiques",
     details: "Alimentant notre équipe avec des boissons énergétiques et un soutien promotionnel depuis 2020. Ensemble, nous avons décroché de nombreuses victoires et créé des moments inoubliables dans l'histoire du motocross.",
     achievements: ["Soutien Marketing Global", "Amélioration des Performances", "Sponsoring d'Événements"],
@@ -12,7 +12,7 @@ const mainSponsors = [
   },
   {
     name: "MXTRAINER",
-    logo: "../../images/MX.svg",
+    logo: "../../public/images/MX.svg",
     description: "Partenaire Officiel",
     details: "Mxtrainer est la première application te permettant de gérer ta saison : inscriptions aux entraînements, chronomètrage, inscriptions aux courses, analyses de performances",
     achievements: ["inscriptions aux entraînements", "chronomètrage technique", "analyse de performances"],
