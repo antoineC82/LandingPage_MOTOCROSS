@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** SPLASH **/
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+.zoom-in {
+  animation: zoom-in 1s ease-in-out forwards;
+}
+
+/** SHORTCUT CLASSES **/
+.bg-mx-gradient {
+  @apply bg-gradient-to-br from-gradient-start to-gradient-end;
+}
+
+.text-mx-gradient {
+  @apply bg-gradient-to-br from-gradient-start to-gradient-end text-transparent bg-clip-text;
+}
+
+/** UTILITY **/
+@layer utilities {
+  .position-unset {
+    position: unset;
+  }
+}
+
+/** SVG **/
+.active-icon * {
+  fill: url(#gradient-icon-active);
+}
+
+.card_arc path {
+  fill: currentColor;
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+/** LOADER **/
+.loader-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.loader-line-mask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  overflow: hidden;
+  transform-origin: 60px 60px;
+  -webkit-mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
+}
+
+.loader-line-mask .loader-line {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgb(219 0 255 / 70%)
+}
+
+
+/** SEARCH INPUT HACK **/
+/* clears the ‘X’ from search inputs */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/** MAP **/
+.map-wrap {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px - var(--safe_area_bottom, 0px));
+  /* calculate height of the screen minus the heading and navigation */
+}
+
+.map-wrap-small {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  /* calculate height of the screen minus the heading and navigation */
+}
+
+@media (min-width: 1024px) {
+  .map-wrap {
+    height: calc(100vh - 6rem);
+  }
+}
+
+.map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/** SLIDER HACK **/
+input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+  /* @apply w-6 h-6 appearance-none pointer-events-auto; */
+}
+
+
+/** LIGHTBOX / SAFEAREA **/
+.yarl__toolbar {
+  padding-top: calc(8px + var(--safe_area_top, 0px));
+}
+
+.yarl__container {
+  padding-top: var(--safe_area_top, 0px);
+  padding-left: var(--safe_area_left, 0px);
+  padding-right: var(--safe_area_right, 0px);
+  padding-bottom: var(--safe_area_bottom, 0px);
+}
+
+.yarl__thumbnails_wrapper>.yarl__container {
+  padding-bottom: 0px;
+}
+
+.yarl__thumbnails_container {
+  padding-bottom: var(--safe_area_bottom, 0px);
+}
+
+/** PHONE INPUT **/
+.react-tel-input {
+  font-family: inherit;
+}
+
+div.react-tel-input>div.special-label {
+  @apply inline bg-white text-sm font-medium leading-6 text-gray-900 absolute left-0 top-0 ml-8 px-1 -translate-y-3;
+}
+
+div.react-tel-input>div.flag-dropdown {
+  @apply border-0 pl-3;
+}
+
+div.react-tel-input>div.flag-dropdown,
+div.react-tel-input>div.flag-dropdown.open,
+div.react-tel-input>div.flag-dropdown>div.selected-flag,
+div.react-tel-input>div.flag-dropdown.open>div.selected-flag,
+div.react-tel-input>div.flag-dropdown.open>div.selected-flag:hover,
+div.react-tel-input>div.flag-dropdown.open>div.selected-flag:focus {
+  background: none;
+}
+
+div.react-tel-input>div.flag-dropdown.open>ul.country-list {
+  @apply left-5 right-0;
+}
+
+div.react-tel-input>input.form-control {
+  @apply w-full rounded-l-full rounded-r-full border-0 py-3 pr-14 h-auto text-base tracking-normal pl-[55px];
+}
+
+div.react-tel-input>input.form-control:focus {
+  @apply w-full rounded-l-full rounded-r-full border-0 py-3 pr-14;
+}
+
+
+/** SCROLLBAR **/
+@layer utilities {
+  .styled-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .styled-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top left, #c03030 0%, #d709dd 100%);
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .styled-scrollbar::-webkit-scrollbar-track {
+    background: #cacaca;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .styled-scrollbar {
+    scrollbar-color: linear-gradient(to top left, #c03030 0%, #d709dd 100%) transparent;
+    scrollbar-width: 5px;
+  }
+}
+
+
+/** SWIPER **/
+.swiper {
+  --main-bg-color: brown;
+}
+
+.swiper-pagination-bullet {
+  background-color: gray;
+  width: 11px;
+  height: 11px;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(to top left, #c03030 0%, #d709dd 100%);
+}
+
+.swiper-pagination-bullet {
+  margin-right: 5px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: transparent;
+  @apply bg-gradient-to-br from-gradient-start to-gradient-end bg-clip-text;
+}
+
+/** MODALS WITH MTRAINER BACKGROUND **/
+.modal-mx::before {
+  background-image: url("assets/mx.svg"), url("assets/trainer.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 75%, 75%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.05;
+}
