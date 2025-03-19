@@ -1,5 +1,5 @@
 import React from 'react';
-import fond from '../../LandingPage_MOTOCROSS/public/images/fond.jpg';
+import fond from '../../public/images/fond.jpg';
 
 export function Header() {
   return (

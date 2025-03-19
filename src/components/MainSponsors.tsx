@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, Zap } from 'lucide-react';
-import redbull from '../../LandingPage_MOTOCROSS/public/images/redbull.png';
+import redbull from '../../public/images/redbull.png';
 import mxtrainer from '../../public/images/MX.svg';
 
 const mainSponsors = [

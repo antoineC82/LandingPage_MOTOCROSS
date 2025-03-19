@@ -1,12 +1,12 @@
 import React from 'react';
 import { type Rider } from '../types';
 import { Trophy, ChevronRight } from 'lucide-react';
-import flo from '../../LandingPage_MOTOCROSS/public/images/FD.jpg';
-import fab from '../../LandingPage_MOTOCROSS/public/images/FF.jpg';
-import rom from '../../LandingPage_MOTOCROSS/public/images/RD.jpg';
-import ant from '../../LandingPage_MOTOCROSS/public/images/AC.jpg';
-import lud from '../../LandingPage_MOTOCROSS/public/images/LG.jpeg';
-import romf from '../../LandingPage_MOTOCROSS/public/images/RF.jpg';
+import flo from '../../public/images/FD.jpg';
+import fab from '../../public/images/FF.jpg';
+import rom from '../../public/images/RD.jpg';
+import ant from '../../public/images/AC.jpg';
+import lud from '../../public/images/LG.jpeg';
+import romf from '../../public/images/RF.jpg';
 
 const riders: Rider[] = [
   {

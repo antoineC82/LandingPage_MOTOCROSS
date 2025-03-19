@@ -5,10 +5,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import as from '../../LandingPage_MOTOCROSS/public/images/3AS.jpg';
-import fx from '../../LandingPage_MOTOCROSS/public/images/FX.png';
-import mx from '../../LandingPage_MOTOCROSS/public/images/MXSEAT.jpg';
-import fox from '../../LandingPage_MOTOCROSS/public/images/FOX.jpg';
+import as from '../../public/images/3AS.jpg';
+import fx from '../../public/images/FX.png';
+import mx from '../../public/images/MXSEAT.jpg';
+import fox from '../../public/images/FOX.jpg';
 
 const partners = [
   {
