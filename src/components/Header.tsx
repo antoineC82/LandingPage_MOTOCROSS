@@ -1,5 +1,5 @@
 import React from 'react';
-import fond from '../../public/images/logo.jpg';
+import fond from '../../public/images/logo.png';
 
 export function Header() {
   return (
